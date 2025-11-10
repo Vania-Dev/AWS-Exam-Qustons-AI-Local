@@ -1,0 +1,12 @@
+opencv-python
+easyocr
+langchain==1.0.2
+langchain-community==0.4
+langchain-core==1.0.1
+langchain-ollama==1.0.0
+langchain-text-splitters==1.0.0
+langgraph==1.0.1
+PyToNotion
+python-dotenv
+Pillow
+tqdm
