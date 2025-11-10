@@ -29,7 +29,7 @@ Image Input → OCR Processing → AI Analysis → Notion Upload
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Vania-Dev/AWS-Exam-Qustons-AI-Local.git
    cd AWS_Exam_Questions_AI
    ```
 
