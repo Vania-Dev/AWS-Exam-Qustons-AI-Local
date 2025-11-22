@@ -1,9 +1,9 @@
 # main.py
 import argparse
 import os
-from ocr_utils import image_to_text
-from llm_utils import answer_question_with_llm
-from notion_utils import upload_markdown_as_page
+from utils.ocr import image_to_text
+from utils.llm import answer_question_with_llm
+from utils.notion import upload_question
 from datetime import datetime
 
 def save_markdown(content: str, out_dir="outputs"):
@@ -33,7 +33,7 @@ def main(image_path: str, lang="en", use_gpu: bool = True, notion_upload: bool =
 
     if notion_upload:
         print("Uploading to Notion...")
-        page = upload_markdown_as_page(md, title=os.path.basename(saved))
+        page = upload_question(md, title=os.path.basename(saved))
         print("Uploaded page:", page.get("id"))
 
 if __name__ == "__main__":

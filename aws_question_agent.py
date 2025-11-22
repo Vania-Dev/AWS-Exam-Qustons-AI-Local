@@ -136,7 +136,7 @@ graph = workflow.compile()
 
 # === Workflow Execution ===
 # Define the input for our workflow (the image file to process)
-input_state = {"file_path": "images/Prueba.png"}
+input_state = {"file_path": "images/Example.png"}
 
 # Execute the complete workflow pipeline
 # This will run all three steps in sequence: OCR → AI Analysis → Notion Upload
